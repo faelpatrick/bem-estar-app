@@ -1,0 +1,48 @@
+.phase-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.phase-container div {
+  transition: background-color 0.5s ease-in-out;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.active {
+  background-color: #00a316;
+  border-radius: 15px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.flags {
+  padding: 2rem;
+  margin: 2rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.clock {
+  text-align: center;
+  font-size: 2em;
+}
+
+.btn-container button {
+  color: #ffffff;
+  margin: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.btn-start {
+  background-color: #00a316;
+  border-radius: 40px;
+}
+.btn-stop {
+  background-color: #a30000;
+}
