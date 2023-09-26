@@ -47,8 +47,8 @@ const Page478 = () => {
   return (
     <div>
       <div className="flags">
-        <img src="/path/to/us-flag.png" alt="English" onClick={() => setLanguage("en")} />
-        <img src="/path/to/br-flag.png" alt="Português" onClick={() => setLanguage("pt")} />
+        <img src="./assets/img/en.png" alt="English" onClick={() => setLanguage("en")} />
+        <img src="./assets/img/pt-br.png"    alt="Português" onClick={() => setLanguage("pt")} />
       </div>
       <div className="clock">
         {(count).toFixed(0)} {/* Exibe a contagem atual com 3 casas decimais */}
