@@ -48,10 +48,12 @@ const Page478 = () => {
     <div>
       <div className="flags">
         <img src="./assets/img/en.png" alt="English" onClick={() => setLanguage("en")} />
-        <img src="./assets/img/pt-br.png"    alt="Português" onClick={() => setLanguage("pt")} />
+        <img src="./assets/img/pt-br.png" alt="Português" onClick={() => setLanguage("pt")} />
       </div>
-      <div className="clock">
-        {(count).toFixed(0)} {/* Exibe a contagem atual com 3 casas decimais */}
+      <div className="clock-out">
+        <div className="clock">
+          {count.toFixed(0)} {/* Exibe a contagem atual com 3 casas decimais */}
+        </div>
       </div>
       <div className="phase-container">
         <div className={phase === "Inhale" ? "active" : ""}>{isPortuguese ? "Inspire" : "Inhale"}</div>
@@ -62,8 +64,12 @@ const Page478 = () => {
         <progress value={count} max={phase === "Inhale" ? 4 : phase === "Hold" ? 7 : 8}></progress>
       </div>
       <div className="btn-container">
-        <button onClick={start} className="btn-start">{isPortuguese ? "Iniciar" : "Play"}</button>
-        <button onClick={stop} className="btn-stop">{isPortuguese ? "Parar" : "Stop"}</button>
+        <button onClick={start} className="btn-start">
+          {isPortuguese ? "Iniciar" : "Play"}
+        </button>
+        <button onClick={stop} className="btn-stop">
+          {isPortuguese ? "Parar" : "Stop"}
+        </button>
       </div>
     </div>
   );
