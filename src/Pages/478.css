@@ -84,3 +84,18 @@ progress {
 .btn-stop {
   background-color: #a30000;
 }
+
+footer {
+  font-size: 10pt;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  left: 10%;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}

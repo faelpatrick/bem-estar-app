@@ -71,6 +71,12 @@ const Page478 = () => {
           {isPortuguese ? "Parar" : "Stop"}
         </button>
       </div>
+      <footer>
+        Created by{" "}
+        <a href="https://rafaelpatrick.com.br/" target="_blank">
+          Rafael Patrick de Souza
+        </a>
+      </footer>
     </div>
   );
 };
