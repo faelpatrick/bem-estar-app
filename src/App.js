@@ -4,6 +4,10 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Page478 from "./Pages/478";
 
+import { inject } from '@vercel/analytics';
+ 
+inject();
+
 function App() {
   return (
     <div className="App">
